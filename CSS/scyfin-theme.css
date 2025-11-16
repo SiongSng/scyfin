@@ -1099,23 +1099,23 @@ html,
 /* Plugin support */
 
 /* Media Bar */
-.layout-desktop #slides-container {
+#slides-container {
     margin: 125px 50px 0 300px !important;
     width: auto !important;
     border-radius: var(--rounded-cards) !important;
     height: 58% !important;
 }
-.layout-desktop #slides-container .backdrop-container,
-.layout-desktop #slides-container .backdrop-overlay,
-.layout-desktop #slides-container .backdrop,
-.layout-desktop #slides-container .gradient-overlay {
+#slides-container .backdrop-container,
+#slides-container .backdrop-overlay,
+#slides-container .backdrop,
+#slides-container .gradient-overlay {
     mask-image: none !important;
     -webkit-mask-image: none !important;
 }
-.layout-desktop #slides-container .pause-button {
+#slides-container .pause-button {
     top: 1rem !important;
 }
-.layout-desktop #slides-container .logo-container {
+#slides-container .logo-container {
     top: 8vh !important;
 }
 /* Scaling */
@@ -1134,5 +1134,18 @@ html,
     }
     .layout-desktop #slides-container .button-container {
         top: calc(50% + 15vh) !important;
+    }
+}
+/* Mobile styling */
+.layout-mobile #slides-container {
+    margin: 120px 3.3% 0 3.3% !important;
+    height: calc(51vh + 7.5em) !important;
+}
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    .layout-mobile #slides-container .logo-container {
+        top: 50% !important;
+    }
+    .layout-mobile #slides-container .button-container {
+        top: calc(50% + 23vh) !important;
     }
 }
