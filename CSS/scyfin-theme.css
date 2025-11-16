@@ -659,7 +659,7 @@ html,
 }
 
 /* Mobile media details page */
-.layout-mobile .itemDetailsGroup {
+.layout-mobile .itemDetailsGroup:has(> :not(.hide)) {
     background: var(--secondary-background-color) !important;
     padding: 15px 20px 5px 20px !important;
     border-radius: var(--rounded-cards) !important;
@@ -714,7 +714,7 @@ html,
     padding: 0px 20px 10px 20px !important;
 }
 /* Fix content shifting when clicking "Show more" on a long description */
-.layout-desktop .detailSectionContent .overview {
+.detailSectionContent .overview {
     display: -webkit-box !important;
 }
 
